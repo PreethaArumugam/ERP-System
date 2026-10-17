@@ -33,8 +33,8 @@ public class StockMasterController {
         return stockMasterService.getAllStock();
     }
 
-    @GetMapping("/by-itemName/{itemName}")
-    private StockMaster getStockByItemName(@PathVariable String itemName){
+    @GetMapping("/item")
+    private StockMaster getStockByItemName(@RequestParam String itemName){
         return stockMasterService.getStockByItemName(itemName);
     }
 

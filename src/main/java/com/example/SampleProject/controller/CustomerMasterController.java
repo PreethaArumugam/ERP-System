@@ -28,8 +28,8 @@ public class CustomerMasterController {
         return customerMasterService.getAllCustomer();
     }
 
-    @GetMapping("/{id}")
-    private CustomerMaster getCustomerById(@PathVariable Long id){
+    @GetMapping
+    private CustomerMaster getCustomerById(@RequestParam Long id){
         return customerMasterService.getCustomerById(id);
     }
 
